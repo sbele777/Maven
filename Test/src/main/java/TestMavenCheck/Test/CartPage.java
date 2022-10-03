@@ -32,5 +32,9 @@ public class CartPage extends BaseClass {
 		return placeOrderButton;
 	}
 	
+	public void print()
+	{
+		System.out.println();
+	}
 	
 }

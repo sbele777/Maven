@@ -9,12 +9,60 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">140,703</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">189,839</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">TestMavenCheck.Test.CartPageTest</td><td><a href="#m0">varifyItemInCart</a></td><td rowspan="1">1653570750341</td><td rowspan="1">12318</td></tr><tr class="passedeven"><td><a href="#m1">varifyPlaceOrderBtnEnabled</a></td><td rowspan="1">1653570762665</td><td rowspan="1">76</td></tr><tr class="passedodd"><td rowspan="1">TestMavenCheck.Test.HomePageTest</td><td><a href="#m2">varifySearchItem</a></td><td rowspan="1">1653570673051</td><td rowspan="1">22015</td></tr><tr class="passedeven"><td rowspan="2">TestMavenCheck.Test.LoginPageTest</td><td><a href="#m3">varifyLogin</a></td><td rowspan="1">1653570646067</td><td rowspan="1">8919</td></tr><tr class="passedeven"><td><a href="#m4">varifyTopOffers</a></td><td rowspan="1">1653570655007</td><td rowspan="1">495</td></tr><tr class="passedodd"><td rowspan="1">TestMavenCheck.Test.ProductPageTest</td><td><a href="#m5">varifyAddtoKart</a></td><td rowspan="1">1653570709743</td><td rowspan="1">24413</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">TestMavenCheck.Test.CartPageTest</td><td><a href="#m0">varifyItemInCart</a></td><td rowspan="1">1662622139589</td><td rowspan="1">7190</td></tr><tr class="failedeven"><td><a href="#m1">varifyPlaceOrderBtnEnabled</a></td><td rowspan="1">1662622146823</td><td rowspan="1">68</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestMavenCheck.Test.HomePageTest</td><td><a href="#m2">varifySearchItem</a></td><td rowspan="1">1662622035488</td><td rowspan="1">27239</td></tr><tr class="passedodd"><td rowspan="2">TestMavenCheck.Test.LoginPageTest</td><td><a href="#m3">varifyLogin</a></td><td rowspan="1">1662621988135</td><td rowspan="1">8119</td></tr><tr class="passedodd"><td><a href="#m4">varifyTopOffers</a></td><td rowspan="1">1662621996295</td><td rowspan="1">346</td></tr><tr class="passedeven"><td rowspan="1">TestMavenCheck.Test.ProductPageTest</td><td><a href="#m5">varifyAddtoKart</a></td><td rowspan="1">1662622084280</td><td rowspan="1">33592</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">TestMavenCheck.Test.CartPageTest#varifyItemInCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestMavenCheck.Test.CartPageTest#varifyPlaceOrderBtnEnabled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">TestMavenCheck.Test.CartPageTest#varifyItemInCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1356, 28). Other element would receive the click: &lt;div class=&quot;_2hriZF _2rbIyg&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=105.0.5195.53)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-EDH5CLB&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bd4c7a4675559fe0975ca1a6bed406, clickElement {id=ca80a6fe-4d46-4094-a49b-bcb9895ba063}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.53, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61565/devtoo..., se:cdpVersion: 105.0.5195.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (76bd4c7a4675559fe0975ca1a6bed406)] -&gt; xpath: //span[text()=&apos;Cart&apos;]]
+Session ID: 76bd4c7a4675559fe0975ca1a6bed406
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at TestMavenCheck.Test.HomePage.clickCartIcon(HomePage.java:73)
+	at TestMavenCheck.Test.CartPageTest.varifyItemInCart(CartPageTest.java:17)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestMavenCheck.Test.CartPageTest#varifyPlaceOrderBtnEnabled</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;_2KpZ6l _2ObVJD _3AWRsL&apos;]&quot;}
+  (Session info: chrome=105.0.5195.53)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-EDH5CLB&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bd4c7a4675559fe0975ca1a6bed406, findElement {using=xpath, value=//button[@class=&apos;_2KpZ6l _2ObVJD _3AWRsL&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.53, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61565/devtoo..., se:cdpVersion: 105.0.5195.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bd4c7a4675559fe0975ca1a6bed406
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.isEnabled(Unknown Source)
+	at TestMavenCheck.Test.CartPageTest.varifyPlaceOrderBtnEnabled(CartPageTest.java:26)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">TestMavenCheck.Test.HomePageTest#varifySearchItem</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">TestMavenCheck.Test.LoginPageTest#varifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">TestMavenCheck.Test.LoginPageTest#varifyTopOffers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

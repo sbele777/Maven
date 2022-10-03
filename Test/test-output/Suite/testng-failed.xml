@@ -6,14 +6,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestMavenCheck.Test.HomePageTest">
+      <class name="TestMavenCheck.Test.CartPageTest">
         <methods>
           <include name="tearDownBrowser"/>
           <include name="pageObjects"/>
-          <include name="varifyTopOffers"/>
+          <include name="varifyItemInCart"/>
           <include name="launchBrowser"/>
+          <include name="varifyPlaceOrderBtnEnabled"/>
         </methods>
-      </class> <!-- TestMavenCheck.Test.HomePageTest -->
+      </class> <!-- TestMavenCheck.Test.CartPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

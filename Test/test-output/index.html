@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\owner\eclipse-workspace\Test\testng.xml</span>
+                    <span>C:\Users\owner\git\Maven\Test\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestMavenCheck.Test.CartPageTest" hash-for-method="varifyItemInCart">varifyItemInCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestMavenCheck.Test.CartPageTest" hash-for-method="varifyPlaceOrderBtnEnabled">varifyPlaceOrderBtnEnabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,17 +126,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestMavenCheck.Test.CartPageTest" hash-for-method="varifyItemInCart">varifyItemInCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestMavenCheck.Test.LoginPageTest" hash-for-method="varifyLogin">varifyLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="TestMavenCheck.Test.CartPageTest" hash-for-method="varifyPlaceOrderBtnEnabled">varifyPlaceOrderBtnEnabled</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,17 +151,91 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestMavenCheck.Test.ProductPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">TestMavenCheck.Test.CartPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="varifyAddtoKart">
-                  </a> <!-- varifyAddtoKart -->
-                  <span class="method-name">varifyAddtoKart</span>
+                  <a name="varifyItemInCart">
+                  </a> <!-- varifyItemInCart -->
+                  <span class="method-name">varifyItemInCart</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1356, 28). Other element would receive the click: &lt;div class=&quot;_2hriZF _2rbIyg&quot; tabindex=&quot;-1&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=105.0.5195.53)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-EDH5CLB&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bd4c7a4675559fe0975ca1a6bed406, clickElement {id=ca80a6fe-4d46-4094-a49b-bcb9895ba063}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.53, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61565/devtoo..., se:cdpVersion: 105.0.5195.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (76bd4c7a4675559fe0975ca1a6bed406)] -&gt; xpath: //span[text()=&apos;Cart&apos;]]
+Session ID: 76bd4c7a4675559fe0975ca1a6bed406
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at TestMavenCheck.Test.HomePage.clickCartIcon(HomePage.java:73)
+	at TestMavenCheck.Test.CartPageTest.varifyItemInCart(CartPageTest.java:17)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifyPlaceOrderBtnEnabled">
+                  </a> <!-- varifyPlaceOrderBtnEnabled -->
+                  <span class="method-name">varifyPlaceOrderBtnEnabled</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;_2KpZ6l _2ObVJD _3AWRsL&apos;]&quot;}
+  (Session info: chrome=105.0.5195.53)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-EDH5CLB&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76bd4c7a4675559fe0975ca1a6bed406, findElement {using=xpath, value=//button[@class=&apos;_2KpZ6l _2ObVJD _3AWRsL&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.53, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61565/devtoo..., se:cdpVersion: 105.0.5195.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 76bd4c7a4675559fe0975ca1a6bed406
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy15.isEnabled(Unknown Source)
+	at TestMavenCheck.Test.CartPageTest.varifyPlaceOrderBtnEnabled(CartPageTest.java:26)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestMavenCheck.Test.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="varifySearchItem">
+                  </a> <!-- varifySearchItem -->
+                  <span class="method-name">varifySearchItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,36 +265,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestMavenCheck.Test.HomePageTest</span>
+              <span class="class-name">TestMavenCheck.Test.ProductPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="varifySearchItem">
-                  </a> <!-- varifySearchItem -->
-                  <span class="method-name">varifySearchItem</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestMavenCheck.Test.CartPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="varifyItemInCart">
-                  </a> <!-- varifyItemInCart -->
-                  <span class="method-name">varifyItemInCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="varifyPlaceOrderBtnEnabled">
-                  </a> <!-- varifyPlaceOrderBtnEnabled -->
-                  <span class="method-name">varifyPlaceOrderBtnEnabled</span>
+                  <a name="varifyAddtoKart">
+                  </a> <!-- varifyAddtoKart -->
+                  <span class="method-name">varifyAddtoKart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,7 +280,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\owner\eclipse-workspace\Test\testng.xml</span>
+            <span class="header-content">C:\Users\owner\git\Maven\Test\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -278,27 +339,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'varifyAddtoKart')
 data.setCell(0, 2, 'TestMavenCheck.Test.ProductPageTest')
-data.setCell(0, 3, 24413);
+data.setCell(0, 3, 33592);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'varifySearchItem')
 data.setCell(1, 2, 'TestMavenCheck.Test.HomePageTest')
-data.setCell(1, 3, 22015);
+data.setCell(1, 3, 27239);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'varifyItemInCart')
-data.setCell(2, 2, 'TestMavenCheck.Test.CartPageTest')
-data.setCell(2, 3, 12318);
+data.setCell(2, 1, 'varifyLogin')
+data.setCell(2, 2, 'TestMavenCheck.Test.LoginPageTest')
+data.setCell(2, 3, 8119);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'varifyLogin')
-data.setCell(3, 2, 'TestMavenCheck.Test.LoginPageTest')
-data.setCell(3, 3, 8919);
+data.setCell(3, 1, 'varifyItemInCart')
+data.setCell(3, 2, 'TestMavenCheck.Test.CartPageTest')
+data.setCell(3, 3, 7190);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'varifyTopOffers')
 data.setCell(4, 2, 'TestMavenCheck.Test.LoginPageTest')
-data.setCell(4, 3, 495);
+data.setCell(4, 3, 346);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'varifyPlaceOrderBtnEnabled')
 data.setCell(5, 2, 'TestMavenCheck.Test.CartPageTest')
-data.setCell(5, 3, 76);
+data.setCell(5, 3, 68);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -336,88 +397,92 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">22607 ms</span>
+                <span class="method-start">29333 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">varifyLogin</span>
-                <span class="method-start">22716 ms</span>
+                <span class="method-start">29496 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">31649 ms</span>
+                <span class="method-start">37641 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">varifyTopOffers</span>
-                <span class="method-start">31656 ms</span>
+                <span class="method-start">37656 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownBrowser</span>
-                <span class="method-start">32159 ms</span>
+                <span class="method-start">38012 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestMavenCheck.Test.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">33462 ms</span>
+                <span class="method-start">39311 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">49700 ms</span>
+                <span class="method-start">76840 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">varifySearchItem</span>
-                <span class="method-start">49700 ms</span>
+                <span class="method-start">76849 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownBrowser</span>
-                <span class="method-start">71715 ms</span>
+                <span class="method-start">104094 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestMavenCheck.Test.ProductPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">72715 ms</span>
+                <span class="method-start">105464 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">86390 ms</span>
+                <span class="method-start">125638 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">varifyAddtoKart</span>
-                <span class="method-start">86392 ms</span>
+                <span class="method-start">125641 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownBrowser</span>
-                <span class="method-start">110805 ms</span>
+                <span class="method-start">159240 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestMavenCheck.Test.CartPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">111893 ms</span>
+                <span class="method-start">160429 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">126990 ms</span>
+                <span class="method-start">180948 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">varifyItemInCart</span>
-                <span class="method-start">126990 ms</span>
+                <span class="method-start">180950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">pageObjects</span>
-                <span class="method-start">139308 ms</span>
+                <span class="method-start">188164 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">varifyPlaceOrderBtnEnabled</span>
-                <span class="method-start">139314 ms</span>
+                <span class="method-start">188184 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownBrowser</span>
-                <span class="method-start">139390 ms</span>
+                <span class="method-start">188257 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
